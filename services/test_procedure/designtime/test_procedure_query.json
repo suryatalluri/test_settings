@@ -1,0 +1,1 @@
+{"name":"test_procedure","description":"Queries for test_procedure","queries":[{"name":"test","query":"insert into Employee (ID, Name, City) values (1, 'Mani', 'Hyd'), (2, 'Surya', 'MTM'), (3, 'Santosh', 'Hyd')","comment":"","description":null,"nativeSql":true,"returnsSingleResult":false,"update":true,"queryParams":[],"outputType":null}]}

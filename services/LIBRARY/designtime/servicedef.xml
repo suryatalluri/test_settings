@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="LIBRARY" type="DataService" springFile="LIBRARY.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.test_settings.library.Book">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="author" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="description" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="imageUrl" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="isbn" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="publisher" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="rating" typeRef="java.lang.Integer" isList="false" allowNull="true"/>
+            <element name="readStatus" typeRef="java.lang.Integer" isList="false" allowNull="true"/>
+            <element name="tenantid" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="title" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+    </dataobjects>
+</service>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="test_procedure" type="DataService" springFile="test_procedure.spring.xml">
+    <operation operationType="nativequery" name="test">
+        <return typeRef="test_proceduretestrtnType" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="com.test_settings.test_procedure.Employee">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="name" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="city" typeRef="java.lang.String" isList="false" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="test_proceduretestrtnType"/>
+    </dataobjects>
+</service>

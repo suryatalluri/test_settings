@@ -25,17 +25,19 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
 }]);
 </script>
 <script id="Main.variables.json">
-var _MainPage_Variables_ ={};
+var _MainPage_Variables_ ={}
 </script>
 <script id="Main.html" type="text/ng-template">
-<wm-page data-ng-controller="MainPageController" name="mainpage">
-  <wm-left-panel content="leftnav" columnwidth="2" name="left_panel1"></wm-left-panel>
-  <wm-mobile-navbar name="mobile_navbar1" title="Title" backbuttoniconclass="fa fa-chevron-left" leftnavpaneliconclass="fa fa-bars">
-    <wm-button class="btn-transparent" caption="" type="button" name="AddButton" iconclass="glyphicon glyphicon-plus"></wm-button>
-  </wm-mobile-navbar>
-  <wm-content name="content1">
-    <wm-page-content columnwidth="12" name="page_content1"></wm-page-content>
-  </wm-content>
-  <wm-mobile-tabbar dataset="home,music,edit" name="mobile_tabbar1"></wm-mobile-tabbar>
+<wm-page name="mainpage" data-ng-controller="MainPageController">
+    <wm-left-panel content="leftnav" name="left_panel1" columnwidth="2"></wm-left-panel>
+    <wm-mobile-navbar title="Title" name="mobile_navbar1" leftnavpaneliconclass="fa fa-bars" backbuttoniconclass="fa fa-chevron-left">
+        <wm-button class="btn-transparent" type="button" name="AddButton" caption="" iconclass="glyphicon glyphicon-plus"></wm-button>
+    </wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-button class="btn-default" type="button" name="button2" caption="Button"></wm-button>
+        </wm-page-content>
+    </wm-content>
+    <wm-mobile-tabbar name="mobile_tabbar1" dataset="home,music,edit"></wm-mobile-tabbar>
 </wm-page>
 </script>
